@@ -5,7 +5,7 @@ const IndexPage = ( { data: { allMarkdownRemark: { edges }} } )  => {
   const Learnings = edges
       .map( edge => <LearningLink key={edge.node.id} post={edge.node} />)
 
-  return <div>
+  return <div id="learning_site_index_content">
   <h1>About this site</h1>
   <p>In the last 4-5 years or so, everytime I read a book or research a topic I write notes about it in a markdown file.</p>
 

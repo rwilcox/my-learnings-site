@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const LearningLink = ( { post } ) => (
     <div>
-        <Link to={post.frontmatter.path}>
+        <Link to={post.frontmatter.path} className="learning-link">
             {post.frontmatter.title}
         </Link>
     </div>
