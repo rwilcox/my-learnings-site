@@ -2,9 +2,9 @@
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ryan Wilcox <rwilcox@wilcoxd.com>",
   "dependencies": {
-    "gatsby": "^1.9.218",
+    "gatsby": ">=1.9.256",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.25",
