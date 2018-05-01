@@ -27,11 +27,17 @@ exports.createPages = ( { boundActionCreators, graphql } ) => {
                     if ( result.errors ) return Promise.reject(result.errors)
 
                     result.data.allMarkdownRemark.edges.forEach( ({ node } ) => {
-                        createPage( {
-                            path: node.frontmatter.path,
-                            component: learningPageTemplate,
-                            content: {}
-                        })
+                        console.log(node)
+
+                        if ( node.frontmatter.path ) {
+                            createPage( {
+                                path: node.frontmatter.path,
+                                component: learningPageTemplate,
+                                content: {}
+                            })
+                        } else {
+                            console.log("skipping file without a path frontmatter element (good luck!)")
+                        }
                     })
                 })
 }
