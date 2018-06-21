@@ -7,9 +7,11 @@
     "gatsby": ">=1.9.256",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-remark-autolink-headers": "^1.4.19",
     "gatsby-source-filesystem": "^1.5.25",
     "gatsby-transformer-remark": "^1.7.34",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "lodash": "^4.17.4"
   },
   "keywords": [
     "gatsby"
