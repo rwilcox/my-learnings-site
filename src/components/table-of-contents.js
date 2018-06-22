@@ -30,10 +30,15 @@ function flatToNested(heading, data) {
 }
 
 
+function linkify(title) {
+    return _.toLower(title).replace(/[:\-,\/]/g, "").replace(/ /g, "-")
+}
+
+
 function renderChildren(children, currentLevelIdx) {
     let lists = children.map( (c, idx) => {
        return <li key={`child-${currentLevelIdx}-${idx}`}>
-           <p>{c.title}</p>
+           <p><a href={`#${linkify(c.title)}`}a>{c.title}</a></p>
            { c.children.length > 0 ? renderChildren( c.children, `${currentLevelIdx}-${idx}`) : <span/>}
         </li> 
     })
