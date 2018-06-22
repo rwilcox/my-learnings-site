@@ -31,7 +31,7 @@ function flatToNested(heading, data) {
 
 
 function linkify(title) {
-    return _.toLower(title).replace(/[:\-,\/]/g, "").replace(/ /g, "-")
+    return _.toLower(title).replace(/[:\-,\/<>\(\))"'!]/g, "").replace(/ /g, "-")
 }
 
 
