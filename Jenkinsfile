@@ -47,14 +47,6 @@ pipeline {
     }
 }
 
-def genericCMD( cmd ) {
-    if ( isUnix() ) {
-        sh cmd
-    }
-    else {
-        bat cmd
-    }
-}
 
 
 def npm_install() {
